@@ -19,17 +19,18 @@
         </div>
 
         <div id="logout">
-            <button onclick="cerrarSesion()">Cerrar Sesión</button>
+            <button class="logout-button" onclick="cerrarSesion()">Cerrar Sesión</button>
         </div>
     </section>
     <main>
         <p>Este es un proyecto de ejemplo utilizando HTML, CSS y JavaScript.</p>
     </main>
     <script>
-        function cerrarSesion() {
-            // Lógica para cerrar sesión
-            alert('Cerrar sesión');
-        }
-    </script>
+    function cerrarSesion() {
+        // Redirige al usuario a la página de inicio de sesión (login.html)
+        window.location.href = 'login.html';
+    }
+</script>
 </body>
 </html>
+
