@@ -1,0 +1,63 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+}
+
+#barraLateral {
+    width: 20%;
+    background-color: grey;
+    height: 100vh;
+}
+
+main {
+    width: 80%;
+    background-color: black;
+    height: 100vh;
+}
+
+#logo {
+    background-color: white;
+    height: 15vh;
+    display: flex;
+}
+
+#logo img {
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+#menu {
+    background-color: blue;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu-button {
+    width: 100%;
+    height: 15%;
+}
+
+#logout {
+    background-color: magenta;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-button {
+    width: 100%;
+    height: 100%;
+}

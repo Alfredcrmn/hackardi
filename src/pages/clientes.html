@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-button.css">
+    <link rel="stylesheet" href="styles-clientes.css">
+    <!-- Incluir la biblioteca de Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.27.0/dist/umd/supabase.min.js"></script>
+    <script defer src="clientes.js"></script>
+    <title>Clientes</title>
 </head>
 <body>
-    <button>Clientes</button>
+    <button onclick="location.href='index.html'">Regresar</button>
+    <h1>Clientes</h1>
+    <table id="clientes-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>RFC</th>
+                <th>Fecha Registro</th>
+                <th>Crédito</th>
+                <th>Dirección</th>
+                <th>Código Postal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de la tabla se insertarán aquí -->
+        </tbody>
+    </table>
 </body>
 </html>
