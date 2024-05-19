@@ -4,32 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <title>Hackardí</title>
 </head>
 <body>
     <section id="barraLateral">
         <div id="logo">
-            <img src="harckardi_logo.png" alt="Logo">
+            <img src="hackardi_logo.png" alt="Logo">
         </div>
-
         <div id="menu">
             <button class="menu-button" onclick="location.href='inventario.html'">Inventario</button>
             <button class="menu-button" onclick="location.href='clientes.html'">Clientes</button>
             <button class="menu-button" onclick="location.href='proveedores.html'">Proveedores</button>
             <button class="menu-button" onclick="location.href='../ventas/ventas.html'">Ventas</button>
         </div>
-
         <div id="logout">
             <button class="logout-button" onclick="cerrarSesion()">Cerrar Sesión</button>
         </div>
     </section>
     <main>
-        <p></p>
+        <h1>Hackardí</h1>
+        <div id="chat-container">
+            <div id="messages">
+                <!-- Messages will be displayed here -->
+            </div>
+            <div id="user-input">
+                <input type="text" id="user-message" placeholder="Escribe tu mensaje aquí...">
+                <button id="send-button" onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
     </main>
     <script>
-    function cerrarSesion() {
-        // Redirige al usuario a la página de inicio de sesión (login.html)
-        window.location.href = 'login.html';
-    }
-</script>
+        function cerrarSesion() {
+            window.location.href = 'login.html';
+        }
+
+        function sendMessage() {
+            const userMessageInput = document.getElementById('user-message');
+            const userMessage = userMessageInput.value;
+            if (userMessage.trim() !== '') {
+                const messageContainer = document.getElementById('messages');
+                const newMessage = document.createElement('div');
+                newMessage.classList.add('message', 'user-message');
+                newMessage.textContent = userMessage;
+                messageContainer.appendChild(newMessage);
+                userMessageInput.value = '';
+
+                // Auto scroll to the bottom
+                messageContainer.scrollTop = messageContainer.scrollHeight;
+
+                // Simulate a response (you can replace this with actual chatbot response)
+                setTimeout(() => {
+                    const botMessage = document.createElement('div');
+                    botMessage.classList.add('message', 'bot-message');
+                    botMessage.textContent = 'Respuesta del bot';
+                    messageContainer.appendChild(botMessage);
+                    messageContainer.scrollTop = messageContainer.scrollHeight;
+                }, 1000);
+            }
+        }
+    </script>
 </body>
 </html>
