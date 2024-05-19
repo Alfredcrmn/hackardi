@@ -12,18 +12,24 @@
         </div>
 
         <div id="menu">
-            <iframe src="inventario.html" frameborder="0" class="menu-button"></iframe>
-            <iframe src="ventas.html" frameborder="0" class="menu-button"></iframe>
-            <iframe src="proveedores.html" frameborder="0" class="menu-button"></iframe>
-            <iframe src="clientes.html" frameborder="0" class="menu-button"></iframe>
+            <button onclick="location.href='inventario.html'">Inventario</button>
+            <button onclick="location.href='clientes.html'">Clientes</button>
+            <button onclick="location.href='proveedores.html'">Proveedores</button>
+            <button onclick="location.href='ventas.html'">Ventas</button>
         </div>
 
         <div id="logout">
-            <iframe src="logout.html" frameborder="0" class="logout-button"></iframe>
+            <button onclick="cerrarSesion()">Cerrar Sesión</button>
         </div>
     </section>
     <main>
         <p>Este es un proyecto de ejemplo utilizando HTML, CSS y JavaScript.</p>
     </main>
+    <script>
+        function cerrarSesion() {
+            // Lógica para cerrar sesión
+            alert('Cerrar sesión');
+        }
+    </script>
 </body>
 </html>
