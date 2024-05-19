@@ -8,7 +8,7 @@
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(227, 227, 236, 0.8),rgba(55, 142, 179, 0.8)), url(harckardi_logo.png);
+    background-image: linear-gradient(rgba(152, 152, 155, 0.8),rgba(20, 104, 139, 0.8)), url(hackardi.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -88,7 +88,7 @@ form p a {
 .btn-field button {
     flex-basis: 100%;
     background: #eaeaea;
-    color: cadetblue;
+    color: rgb(12, 121, 125);
     height: 40px;
     border-radius: 20px;
     border: 0;
