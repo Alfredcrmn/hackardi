@@ -12,18 +12,18 @@ body{
 }
 #barraLateral{
     width: 20%;
-    background-color: black;
+    background-color: grey;
     height: 100vh;
 }
 
 main{
     width: 80%;
-    background-color: white;
+    background-color: black;
     height: 100vh;
 }
 
 #logo{
-    background-color: black;
+    background-color: white;
     height: 15vh;
     display: flex;
 }
