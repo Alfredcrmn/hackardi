@@ -25,12 +25,13 @@ main{
 #logo{
     background-color: black;
     height: 15vh;
-   display: flex;
+    display: flex;
 }
 
 #logo img{
     height: 100%;
     margin: auto;
+    object-fit: cover;
 }
 #menu{
     background-color: blue;
