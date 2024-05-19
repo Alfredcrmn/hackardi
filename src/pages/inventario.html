@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-button.css">
+    <link rel="stylesheet" href="styles-inventario.css">
+    <!-- Incluir la biblioteca de Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.27.0/dist/umd/supabase.min.js"></script>
+    <script defer src="inventario.js"></script>
+    <title>Inventario</title>
 </head>
 <body>
-    <button>Inventario</button>
+    <button onclick="location.href='index.html'">Regresar</button>
+    <h1>Inventario</h1>
+    <table id="inventario-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre Producto</th>
+                <th>Cantidad Ideal</th>
+                <th>Último Pedido</th>
+                <th>Precio Unitario</th>
+                <th>Categoría</th>
+                <th>Última Modificación</th>
+                <th>Cantidad</th>
+                <th>Marca</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de la tabla se insertarán aquí -->
+        </tbody>
+    </table>
 </body>
 </html>
