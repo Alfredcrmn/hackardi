@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-button.css">
+    <link rel="stylesheet" href="styles-proveedores.css">
+    <!-- Incluir la biblioteca de Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.27.0/dist/umd/supabase.min.js"></script>
+    <script defer src="proveedores.js"></script>
+    <title>Proveedores</title>
 </head>
 <body>
-    <button>Proveedores</button>
+    <button onclick="location.href='index.html'">Regresar</button>
+    <h1>Proveedores</h1>
+    <table id="proveedores-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Contacto Principal</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Dirección</th>
+                <th>Código Postal</th>
+                <th>País</th>
+                <th>Tipo Proveedor</th>
+                <th>Estado Proveedor</th>
+                <th>Método Pago Preferido</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Filas de la tabla se insertarán aquí -->
+        </tbody>
+    </table>
 </body>
 </html>
