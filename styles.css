@@ -1,0 +1,42 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+}
+#barraLateral{
+    width: 20%;
+    background-color: black;
+    height: 100vh;
+}
+
+main{
+    width: 80%;
+    background-color: white;
+    height: 100vh;
+}
+
+#logo{
+    background-color: black;
+    height: 15vh;
+   display: flex;
+}
+
+#logo img{
+    height: 100%;
+    margin: auto;
+}
+#menu{
+    background-color: blue;
+    height: 75vh;
+}
+#logout{
+    background-color: magenta;
+    height: 10vh;
+}
