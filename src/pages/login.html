@@ -1,65 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="login.css">
     <script src="https://kit.fontawesome.com/4abc5771dc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@1.29.5/dist/umd/supabase.min.js"></script>
 </head>
 <body>
 
-<div class="cointainer">
+<div class="container">
     <div class="form-box">
-        <h1 id="title">Sign Up</h1>
-        <form>
+        <h1 id="title">Identificacíon</h1>
+        <form id="loginForm">
             <div class="input-group">
-                <div class="input-field" id="nameField">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Name">
-                </div>
-
                 <div class="input-field">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="Email">
+                    <input type="email" id="email" placeholder="Email" required>
                 </div>
 
                 <div class="input-field">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="password">
+                    <input type="password" id="password" placeholder="Password" required>
                 </div>
-                <p>Lost password <a href="#">Click Here!</a></p>
             </div>
             <div class="btn-field">
-                <button type="button" id="signupBtn">Sign up</button>
-                <button type="button" id="signinBtn" class="disable">Sign in</button>
+                <button type="submit" id="signinBtn">Entrar</button>
             </div>
         </form>
+        <div id="loginResult"></div>
     </div>
 </div>
 
-<script>
-
-let signupBtn = document.getElementById("signupBtn");
-let signinBtn = document.getElementById("signinBtn");
-let nameField = document.getElementById("nameField");
-let title = document.getElementById("title");
-
-
-signinBtn.onclick = function(){
-    nameField.style.maxHeight = "0";
-    title.innerHTML = "Sign In";
-    signupBtn.classList.add("disable");
-    signinBtn.classList.remove("disable");
-}
-
-signupBtn.onclick = function(){
-    nameField.style.maxHeight = "60px";
-    title.innerHTML = "Sign Up";
-    signupBtn.classList.remove("disable");
-    signinBtn.classList.add("disable");
-}
-
-</script>
+<script src="authlogin2.js"></script>
 </body>
 </html>
+
+
 
